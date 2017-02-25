@@ -1,16 +1,31 @@
-#instruction{
-
+body{
+	background-image: url("../images/back.jpg");
+}
+.container{
+	float: left;
+}
+h1{
+	color: white ;
+	background-color:#ffaa00;
+}
+#instructions{
+	color:green;
+	background-color: #ffd480;
 }
 #randomgnum{
+	color:purple;
+	background-color: #47d147;
 
 }
 #winlose{
-
+	background-color:#00ffff;
 }
 #crystals{
 
 }
 #playerhead{
-
+background-color:#009999;
 }
-#playerscor#
+#playerscore{
+background-color:#009999;
+}
