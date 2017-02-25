@@ -4,14 +4,12 @@ var playerscore = 0;
 var win = 0;
 var lose = 0; 
 var gamescore = 0;
-function game(){
-
 function gemscore(){
-	for (var i = 0; i < 4 ; i++) {
-		gemran.push(math.round(math.random() * (12)+1));}
+	for (var i = 0; i < 5 ; i++) {
+		gemran.push(Math.round(Math.random() * (12)+1));}
 	}
 function objective (){
-	gamescore = math.round(math.random() * (120-19)+19);
+	gamescore = Math.round(Math.random() * (120-19)+19);
 	console.log(gemscore);}
 function reset(){
 	gemran = [];
@@ -38,6 +36,7 @@ else if (playerscore > gamescore){
 else{
 
 }
+
 $("#1btn").on("click" , function(){
 	playerscore= playerscore + gemran[1];
 	$("#playerscore").html(playerscore);
