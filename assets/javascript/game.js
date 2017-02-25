@@ -20,6 +20,7 @@ function reset(){
 	$("#randomgnum").html(gamescore);
 	$("#playerscore").html(playerscore);
 	gemscore();
+	$("winlose").html('<p> Wins: ' + win + '</p>' + '<p> Losses: ' + lose + '</p>' );
 }
 
 if (gamescore === playerscore){
@@ -56,6 +57,4 @@ $("#1btn").on("click" , function(){
 	playerscore= playerscore + gemran[4];
 	$("#playerscore").html(playerscore);
 	});
-
-}
 }
